@@ -1,0 +1,25 @@
+:root {
+    --DeepSkyBlue-50: #effaff;
+    --DeepSkyBlue-100: #effaff;
+    --DeepSkyBlue-200: #b6ebff;
+    --DeepSkyBlue-300: #75deff;
+    --DeepSkyBlue-400: #2ccfff;
+    --DeepSkyBlue-500: #2ccfff;
+    --DeepSkyBlue-600: #0095d4;
+    --DeepSkyBlue-700: #0076ab;
+    --DeepSkyBlue-800: #00638d;
+    --DeepSkyBlue-900: #065374;
+    --DeepSkyBlue-950: #04344d;
+
+    --blue-skies-gradient: linear-gradient(to top, #2f80ed, #56ccf2);
+    --cool-sky-gradient: linear-gradient(to bottom, #2980b9, #6dd5fa, #ffffff);
+    --blue-raspberry-gradient: linear-gradient(to top, #00b4db, #0083b0);
+    --subu-gradient: linear-gradient(to top, #0cebeb, #20e3b2, #29ffc6);
+}
+
+body {
+    background: #56ccf2;
+    background: var(--blue-skies-gradient);
+    height: 100%;
+    font-family: "Courier Prime", monospace;
+}

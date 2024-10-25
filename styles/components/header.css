@@ -1,0 +1,133 @@
+.header {
+    background: #00b4db;
+    background: var(--blue-raspberry-gradient);
+
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+        rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+        rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--DeepSkyBlue-50);
+}
+
+.logo-icon {
+    width: 1.5rem;
+}
+
+.logo-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.menu-mobile-icon {
+    display: block;
+    height: 0.3rem;
+    width: 1.8rem;
+    background-color: var(--DeepSkyBlue-50);
+}
+
+.nav-list {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-list-open {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--DeepSkyBlue-600);
+    z-index: 2;
+}
+
+.list-item {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.list-item:hover {
+    /* background: #74ebd5;
+    background: linear-gradient(
+        to bottom,
+        #acb6e5,
+        #74ebd5
+    ); */
+    background: var(--subu-gradient);
+    border-radius: 5px;
+    transform: scale(1.15) translateY(2px);
+}
+
+.list-item > a {
+    text-decoration: none;
+    color: var(--DeepSkyBlue-50);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        gap: 1rem;
+    }
+    .menu-mobile {
+        display: none;
+        justify-content: flex-start;
+    }
+
+    .nav-list-desktop {
+        display: flex;
+        gap: 0.5rem;
+        height: 100%;
+        align-items: center;
+    }
+
+    .list-item {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem;
+    }
+
+    .list-item > a {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,210 @@
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+.projects-title {
+    color: var(--DeepSkyBlue-50);
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+}
+
+.projects-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0 1rem;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    height: 500px;
+}
+
+input:not(:checked) + label .card-background {
+    filter: brightness(0.4);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+input:not(:checked) + label .card-content {
+    justify-content: center;
+    align-items: center;
+}
+
+input:checked + label .card-background {
+    filter: brightness(1);
+}
+
+input:checked + label .card-content {
+    background: var(--blue-raspberry-gradient);
+}
+
+input:checked + label .project-description {
+    position: relative;
+    opacity: 1;
+    max-height: 100%;
+}
+
+input:checked + label .project-link {
+    display: block;
+}
+
+.card {
+    width: 100%;
+    min-width: 300px;
+    max-width: 800px;
+    height: 70px;
+    border-radius: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    /* margin: 0 1rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s cubic-bezier(0.28, -0.03, 0, 0.99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.card-content {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    color: var(--DeepSkyBlue-50);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+label .project-name {
+    font-size: 2rem;
+    white-space: nowrap;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.project-description {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    margin: 0;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+}
+
+.project-link {
+    align-self: center;
+    color: var(--DeepSkyBlue-100);
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    text-transform: uppercase;
+}
+
+.project-link:hover {
+    color: var(--DeepSkyBlue-900);
+}
+
+.card[for="c1"] .card-background {
+    background-image: url(../../assets/projects/0-programacao-em-blocos-destaque.webp);
+}
+
+.card[for="c2"] .card-background {
+    background-image: url(../../assets/projects/Os-10-principais-projetos-para-programadores-iniciantes.webp);
+}
+
+.card[for="c3"] .card-background {
+    background-image: url(../../assets/projects/Screenshot_20241008_152006.png);
+}
+
+.card[for="c4"] .card-background {
+    background-image: url(../../assets/projects/swagger-ui.webp);
+}
+
+@media (min-width: 768px) {
+    .projects {
+        padding: 3rem;
+    }
+
+    .projects-title {
+        font-size: 1.5rem;
+    }
+
+    label .project-name {
+        font-size: 3rem;
+    }
+
+    .project-description {
+        font-size: 1.3rem;
+    }
+
+    .project-link {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .projects-title {
+        font-size: 2rem;
+    }
+
+    .projects-wrapper {
+        width: 100%;
+        flex-direction: row;
+        padding: 1rem 0;
+    }
+
+    input:checked + label {
+        height: 600px;
+        width: 900px;
+        max-width: 2000px;
+    }
+
+    input:checked + label .project-name {
+        transform: unset;
+    }
+
+    .card {
+        width: 70px;
+        min-width: 70px;
+        height: 600px;
+    }
+
+    label .project-name {
+        transform: rotate(-90deg);
+    }
+}

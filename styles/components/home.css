@@ -1,0 +1,172 @@
+.home {
+    padding: 1rem 0;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/home-background-img/background-img.png);
+    background-size: cover;
+    background-position: 15% center;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.home-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.home-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 55% 50%;
+
+    border: 10px solid transparent;
+    border-radius: 50%;
+
+    --border-angle: 0turn;
+    --gradient-border: conic-gradient(
+        from var(--border-angle),
+        transparent 25%,
+        #0083b0,
+        #00b4db 99%,
+        transparent
+    );
+    background: var(--gradient-border) border-box;
+
+    animation: border-spin 3s linear infinite;
+}
+
+@keyframes border-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+.home-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--DeepSkyBlue-50);
+    margin: 1rem 1rem 0 1rem;
+    text-align: center;
+    background-color: var(--DeepSkyBlue-950);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1ch solid var(--DeepSkyBlue-50);
+    width: 0ch;
+    animation: typing 1.5s steps(11, end) forwards,
+        blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+    to {
+        width: 12ch;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--DeepSkyBlue-50);
+    }
+}
+
+.home-subtitle {
+    margin: 0.5rem 1rem 0 1rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--DeepSkyBlue-50);
+}
+
+@media (min-width: 425px) {
+    .home::before {
+        background-position: 15% 30%;
+    }
+}
+
+@media (min-width: 768px) {
+    .home {
+        flex-direction: row;
+    }
+
+    .home-picture {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .home-text-wrapper {
+        font-size: 1.5rem;
+        width: 26ch;
+        align-items: flex-start;
+    }
+
+    .home-title {
+        font-size: 3rem;
+    }
+
+    .home-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-picture {
+        width: 23rem;
+        height: 23rem;
+    }
+
+    .home-text-wrapper {
+        font-size: 2rem;
+        width: 25ch;
+    }
+
+    .home-title {
+        font-size: 3.5rem;
+    }
+
+    .home-subtitle {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .home::before {
+        background-position: center 20%;
+    }
+}

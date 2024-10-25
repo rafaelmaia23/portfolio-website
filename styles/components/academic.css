@@ -1,0 +1,173 @@
+.academic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem 0.5rem;
+    background: var(--DeepSkyBlue-500);
+}
+
+.academic-title {
+    color: var(--DeepSkyBlue-50);
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.academic-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.academic-list-item {
+    width: 100%;
+    color: var(--DeepSkyBlue-50);
+    border: 3px dashed var(--DeepSkyBlue-200);
+    padding: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.academic-list-item:hover {
+    border: 3px solid var(--DeepSkyBlue-300);
+    transform: scale(1.05);
+}
+
+.academic-subtitle {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.academic-background-list {
+    display: flex;
+}
+
+.academic-background-list-item {
+    display: list-item;
+    margin-bottom: 1rem;
+}
+
+.academic-background-list-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.academic-background-list-item-name {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.academic-bacground-list-item-separator {
+    display: none;
+}
+
+.academic-background-list-item-text {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.academic-courses-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.academic-courses-list-item {
+    display: list-item;
+    margin-bottom: 1rem;
+}
+
+.academic-courses-list-item-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.academic-courses-list-item-name {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.academic-courses-list-item-text {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.academic-courses-list-item-certification {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--DeepSkyBlue-50);
+}
+
+@media (min-width: 425px) {
+    .academic-background-list-item-name,
+    .academic-background-list-item-text,
+    .academic-courses-list-item-name,
+    .academic-courses-list-item-text,
+    .academic-courses-list-item-certification {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .academic {
+        padding: 3rem;
+    }
+
+    .academic-title {
+        font-size: 1.5rem;
+    }
+
+    .academic-list-item {
+        padding: 1rem;
+    }
+
+    .academic-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .academic-background-list-item-name,
+    .academic-background-list-item-text,
+    .academic-courses-list-item-name,
+    .academic-courses-list-item-text,
+    .academic-courses-list-item-certification {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .academic-title {
+        font-size: 2rem;
+    }
+
+    .academic-list-item {
+        padding: 1.5rem;
+    }
+
+    .academic-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .academic-background-list-item-name,
+    .academic-background-list-item-text,
+    .academic-courses-list-item-name,
+    .academic-courses-list-item-text,
+    .academic-courses-list-item-certification {
+        font-size: 1.2rem;
+    }
+}

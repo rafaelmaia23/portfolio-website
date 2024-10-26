@@ -33,6 +33,7 @@
     width: 100%;
     color: var(--DeepSkyBlue-50);
     border: 3px dashed var(--DeepSkyBlue-200);
+    border-radius: 1rem;
     padding: 0.5rem;
     transition: 0.3s ease-in-out;
 }

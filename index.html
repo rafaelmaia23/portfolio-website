@@ -38,11 +38,10 @@
                 <ul class="nav-list nav-list-desktop">
                     <li class="list-item"><a href="#about">Sobre</a></li>
                     <li class="list-item"><a href="#techs">Techs</a></li>
-                    <li class="list-item"><a href="#">Projetos</a></li>
-                    <li class="list-item"><a href="#">Formação</a></li>
-                    <li class="list-item"><a href="#">Hobbies</a></li>
-                    <li class="list-item"><a href="#">Trabalhos</a></li>
-                    <li class="list-item"><a href="#">Contatos</a></li>
+                    <li class="list-item"><a href="#projects">Projetos</a></li>
+                    <li class="list-item"><a href="#academic">Formação</a></li>
+                    <li class="list-item"><a href="#hobbies">Hobbies</a></li>
+                    <li class="list-item"><a href="#contacts">Contatos</a></li>
                 </ul>
             </nav>
         </header>
@@ -362,7 +361,7 @@
                 <div class="projects-wrapper">
                     <input
                         type="radio"
-                        class="input"
+                        class="project-input"
                         name="card"
                         id="c1"
                         checked
@@ -382,8 +381,12 @@
                             <a href="#" class="project-link">Acesse aqui</a>
                         </div>
                     </label>
-
-                    <input type="radio" class="input" name="card" id="c2" />
+                    <input
+                        type="radio"
+                        class="project-input"
+                        name="card"
+                        id="c2"
+                    />
                     <label for="c2" class="card">
                         <div class="card-background"></div>
                         <div class="card-content">
@@ -399,10 +402,15 @@
                             <a href="#" class="project-link">Acesse aqui</a>
                         </div>
                     </label>
-
-                    <input type="radio" class="input" name="card" id="c3" />
+                    <input
+                        type="radio"
+                        class="project-input"
+                        name="card"
+                        id="c3"
+                    />
                     <label for="c3" class="card">
                         <div class="card-background"></div>
+
                         <div class="card-content">
                             <h3 class="project-name">Projeto 03</h3>
                             <p class="project-description">
@@ -416,8 +424,12 @@
                             <a href="#" class="project-link">Acesse aqui</a>
                         </div>
                     </label>
-
-                    <input type="radio" class="input" name="card" id="c4" />
+                    <input
+                        type="radio"
+                        class="project-input"
+                        name="card"
+                        id="c4"
+                    />
                     <label for="c4" class="card">
                         <div class="card-background"></div>
                         <div class="card-content">
@@ -609,7 +621,116 @@
                     </li>
                 </ul>
             </section>
-            <section style="height: 50vh"></section>
+            <section class="hobbies" id="hobbies">
+                <h2 class="hobbies-title">Meus Hobbies:</h2>
+                <ul class="hobbies-list">
+                    <li class="hobbies-list-item">
+                        <div class="hobbies-backgroung"></div>
+                        <h3 class="hobbies-subtitle">RPG</h3>
+                    </li>
+                    <li class="hobbies-list-item">
+                        <div class="hobbies-backgroung"></div>
+                        <h3 class="hobbies-subtitle">Video Games</h3>
+                    </li>
+                    <li class="hobbies-list-item">
+                        <div class="hobbies-backgroung"></div>
+                        <h3 class="hobbies-subtitle">Ver filmes</h3>
+                    </li>
+                    <li class="hobbies-list-item">
+                        <div class="hobbies-backgroung"></div>
+                        <h3 class="hobbies-subtitle">Brincar com meus gatos</h3>
+                    </li>
+                </ul>
+            </section>
+            <section class="contacts" id="contacts">
+                <h2 class="contacts-title">Contatos:</h2>
+                <div class="contacts-wrapper">
+                    <div>
+                        <p class="contacts-text">
+                            Possui algum projeto? Entre em contato para
+                            conversarmos sobre!
+                        </p>
+                    </div>
+                    <div class="contacts-area">
+                        <p class="contacts-area-text">Me ache em:</p>
+                        <div class="contacts-area-links">
+                            <a href="#" class="contacts-link"
+                                >LinkedIn
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#" class="contacts-link"
+                                >Github
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="contacts-area-text">Ou mande uma mensagem:</p>
+                        <form action="post" class="contacts-area-form">
+                            <div class="contacts-input-wrapper">
+                                <label class="contacts-input-label" for="name"
+                                    >Seu nome:</label
+                                >
+                                <input
+                                    class="contacts-input"
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Fulaninho"
+                                />
+                            </div>
+                            <div class="contacts-input-wrapper">
+                                <label class="contacts-input-label" for="email"
+                                    >Seu e-mail:</label
+                                >
+                                <input
+                                    class="contacts-input"
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="fulaninho@email.com"
+                                />
+                            </div>
+                            <div class="contacts-input-wrapper">
+                                <label
+                                    class="contacts-input-label"
+                                    for="message"
+                                    >Sua mensagem:</label
+                                >
+                                <textarea
+                                    class="contacts-textarea"
+                                    name="message"
+                                    id="message"
+                                    placeholder="Escreva sua mensagem..."
+                                ></textarea>
+                            </div>
+                            <input class="contacts-btn" type="submit" />
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
         <script src="./javascript/main.js"></script>
     </body>

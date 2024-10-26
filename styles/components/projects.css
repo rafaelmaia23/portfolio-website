@@ -26,41 +26,41 @@
     padding: 0 1rem;
 }
 
-input {
+.project-input {
     display: none;
 }
 
-input:checked + label {
+.project-input:checked + label {
     height: 500px;
 }
 
-input:not(:checked) + label .card-background {
+.project-input:not(:checked) + label .card-background {
     filter: brightness(0.4);
     background-size: cover;
     background-position: center;
     position: absolute;
 }
 
-input:not(:checked) + label .card-content {
+.project-input:not(:checked) + label .card-content {
     justify-content: center;
     align-items: center;
 }
 
-input:checked + label .card-background {
+.project-input:checked + label .card-background {
     filter: brightness(1);
 }
 
-input:checked + label .card-content {
+.project-input:checked + label .card-content {
     background: var(--blue-raspberry-gradient);
 }
 
-input:checked + label .project-description {
+.project-input:checked + label .project-description {
     position: relative;
     opacity: 1;
     max-height: 100%;
 }
 
-input:checked + label .project-link {
+.project-input:checked + label .project-link {
     display: block;
 }
 
@@ -93,6 +93,11 @@ input:checked + label .project-link {
     height: 100%;
     z-index: -1;
 }
+
+/* carrossel */
+/* Estilo do carrossel */
+
+/* end carrossel */
 
 .card-content {
     width: 100%;
@@ -188,13 +193,13 @@ label .project-name {
         padding: 1rem 0;
     }
 
-    input:checked + label {
+    .project-input:checked + label {
         height: 600px;
         width: 900px;
         max-width: 2000px;
     }
 
-    input:checked + label .project-name {
+    .project-input:checked + label .project-name {
         transform: unset;
     }
 

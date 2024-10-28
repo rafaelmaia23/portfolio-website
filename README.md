@@ -1,6 +1,6 @@
 # Site Portfólio
 
-<img src="#" alt="badge ONE" style="width: 200px;"/>
+<img src="./readme-imgs/Badge-Portfólio.png" alt="badge ONE" style="width: 200px;"/>
 
 Projeto de desafio do curso "Praticando Front End: Challenge Portfólio" para o programa ONE - Oracle Next Education em parceria com a Alura.
 
